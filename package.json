@@ -9,6 +9,12 @@
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "url": "https://github.com/kubukoz/vscode-nickel-syntax",
+    "type": "git"
+  },
+  "license": "MIT",
+  "publisher": "kubukoz",
   "contributes": {
     "languages": [
       {
