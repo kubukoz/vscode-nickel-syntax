@@ -50,21 +50,12 @@
         }
       ]
     },
-    "operators": {
-      "name": "keyword.operator",
-      "patterns": [
-        {
-          "name": "keyword.operator",
-          "match": "(=>|==|=|\\|\\||\\||->|<|>|>=|<=|\\+\\+|\\+|\\-\\$|\\-|\\*|\\/|&&|&|\\.|\\:)"
-        }
-      ]
-    },
     "numbers": {
       "name": "constant.numeric",
       "patterns": [
         {
           "name": "constant.numeric",
-          "match": "(\\d+)"
+          "match": "(\\d+)(\\.\\d+)"
         }
       ]
     },
@@ -74,6 +65,15 @@
         {
           "name": "constant",
           "match": "\\b(true|false)\\b"
+        }
+      ]
+    },
+    "operators": {
+      "name": "keyword.operator",
+      "patterns": [
+        {
+          "name": "keyword.operator",
+          "match": "(=>|==|=|\\|\\||\\||->|<|>|>=|<=|\\+\\+|\\+|\\-\\$|\\-|\\*|\\/|&&|&|\\.|\\:)"
         }
       ]
     }
