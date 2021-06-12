@@ -13,7 +13,7 @@
     "url": "https://github.com/kubukoz/vscode-nickel-syntax",
     "type": "git"
   },
-  "license": "MIT",
+  "license": "Apache 2.0",
   "publisher": "kubukoz",
   "contributes": {
     "languages": [
