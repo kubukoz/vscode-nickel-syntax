@@ -9,7 +9,16 @@
       "include": "#strings"
     },
     {
+      "include": "#comments"
+    },
+    {
       "include": "#operators"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#bools"
     }
   ],
   "repository": {
@@ -32,12 +41,39 @@
         }
       ]
     },
+    "comments": {
+      "name": "comment.line.double-slash",
+      "patterns": [
+        {
+          "name": "comment.line.double-slash",
+          "match": "\\/\\/(.+)"
+        }
+      ]
+    },
     "operators": {
       "name": "keyword.operator",
       "patterns": [
         {
           "name": "keyword.operator",
           "match": "(=>|==|=|\\|\\||\\||->|<|>|>=|<=|\\+\\+|\\+|\\-\\$|\\-|\\*|\\/|&&|&|\\.|\\:)"
+        }
+      ]
+    },
+    "numbers": {
+      "name": "constant.numeric",
+      "patterns": [
+        {
+          "name": "constant.numeric",
+          "match": "(\\d+)"
+        }
+      ]
+    },
+    "bools": {
+      "name": "constant",
+      "patterns": [
+        {
+          "name": "constant",
+          "match": "\\b(true|false)\\b"
         }
       ]
     }
