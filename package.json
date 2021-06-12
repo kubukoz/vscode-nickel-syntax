@@ -1,25 +1,34 @@
 {
-    "name": "nickel-syntax",
-    "displayName": "Nickel syntax",
-    "description": "Syntax highlighting for the Nickel language",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.57.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "nickel-syntax",
+  "displayName": "Nickel syntax",
+  "description": "Syntax highlighting for the Nickel language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.57.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "nickel",
+        "aliases": [
+          "Nickel",
+          "nickel"
+        ],
+        "extensions": [
+          ".ncl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "nickel",
-            "aliases": ["Nickel", "nickel"],
-            "extensions": [".ncl"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "nickel",
-            "scopeName": "source.nickel",
-            "path": "./syntaxes/nickel.tmLanguage.json"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "nickel",
+        "scopeName": "source.nickel",
+        "path": "./syntaxes/nickel.tmLanguage.json"
+      }
+    ]
+  }
 }
