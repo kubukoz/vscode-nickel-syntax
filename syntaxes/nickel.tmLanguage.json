@@ -7,6 +7,9 @@
     },
     {
       "include": "#strings"
+    },
+    {
+      "include": "#operators"
     }
   ],
   "repository": {
@@ -14,7 +17,7 @@
       "patterns": [
         {
           "name": "keyword.control.nickel",
-          "match": "\\b(if|while|for|return)\\b"
+          "match": "\\b(if|else|then|let|in|fun|switch|forall|import|default|doc)\\b"
         }
       ]
     },
@@ -26,6 +29,15 @@
         {
           "name": "constant.character.escape.nickel",
           "match": "\\\\."
+        }
+      ]
+    },
+    "operators": {
+      "name": "keyword.operator",
+      "patterns": [
+        {
+          "name": "keyword.operator",
+          "match": "(=>|==|=|\\|\\||\\||->|<|>|>=|<=|\\+\\+|\\+|\\-\\$|\\-|\\*|\\/|&&|&|\\.|\\:)"
         }
       ]
     }
