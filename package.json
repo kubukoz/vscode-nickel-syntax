@@ -36,5 +36,8 @@
         "path": "./syntaxes/nickel.tmLanguage.json"
       }
     ]
+  },
+  "devDependencies": {
+    "vsce": "^2.6.6"
   }
 }
