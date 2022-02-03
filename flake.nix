@@ -12,6 +12,9 @@
       in
       {
         defaultPackage = pkgs.callPackage ./derivation.nix { inherit (inputs) gitignore-source; };
+        packages = {
+          test = self.defaultPackage.${system};
+        };
       }
     );
 }
