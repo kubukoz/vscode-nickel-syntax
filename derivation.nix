@@ -1,4 +1,4 @@
-{ mkYarnPackage, gitignore-source, tree }:
+{ mkYarnPackage, tree }:
 let
   pname = "nickel-syntax";
   version = (builtins.fromJSON (builtins.readFile ./package.json)).version;
@@ -6,7 +6,7 @@ let
 in
 mkYarnPackage {
   inherit name;
-  src = gitignore-source.lib.gitignoreSource ./.;
+  src = ./.;
 
   nativeBuildInputs = [ tree ];
   buildPhase = ''
