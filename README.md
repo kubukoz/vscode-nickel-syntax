@@ -1,3 +1,7 @@
+# Project archived, use [tweag.vscode-nickel](https://marketplace.visualstudio.com/items?itemName=Tweag.vscode-nickel) instead
+
+---
+
 # nickel-syntax
 
 Syntax highlighting for the [Nickel](https://github.com/tweag/nickel) language in Visual Studio Code.
